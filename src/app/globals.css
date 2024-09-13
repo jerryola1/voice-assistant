@@ -125,3 +125,60 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+
+@keyframes pulse-grow-shrink {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes slow-ping {
+  0% { transform: scale(0.95); opacity: 1; }
+  75%, 100% { transform: scale(1.05); opacity: 0; }
+}
+
+.animate-pulse-grow-shrink {
+  animation: pulse-grow-shrink 2s ease-in-out infinite;
+}
+
+.animate-slow-ping {
+  animation: slow-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.clip-hexagon {
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+.bg-primary-green-600 {
+  background-color: #4CAF50; /* Adjust this color as needed */
+}
+
+/* MicDisplay styles */
+
+/* Container to center everything */
+.mic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Outer circle with dots around the mic logo */
+.mic-logo-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Central icon styling (optional for tweaking size) */
+.mic-icon {
+  background-color: #00ff00; /* Optional: Add a light green glow */
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
