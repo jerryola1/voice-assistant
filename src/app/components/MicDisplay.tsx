@@ -1,6 +1,5 @@
 // MicDisplay.tsx
 import React from 'react';
-import Image from 'next/image';
 
 const MicDisplay: React.FC = () => {
   return (
